@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item
+          id="blouse"
+          src="https://cdn.glitch.com/a19ed0ae-1f8e-46d1-a22e-946ee9797c81%2Fmodel1.gltf?v=1616721665110"
+        >
+        </a-asset-item>
+      </a-assets>
+
+      <a-entity
+        gltf-model="#blouse"
+        position="-0.010 1.4 -1.2"
+        animation="property: rotation; to: 0 360 0 loop: true; dur: 10000"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
